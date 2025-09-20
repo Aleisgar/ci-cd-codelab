@@ -38,4 +38,4 @@ jobs:
           projectBaseDir: front-end-app
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_FRONT }} run build
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN_FRONT }}
