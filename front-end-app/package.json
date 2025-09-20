@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test": "jest --coverage",
+    "ci:lint": "npm run lint",
+    "ci:test": "npm run test",
     "preview": "vite preview"
   },
   "dependencies": {
